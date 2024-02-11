@@ -6,7 +6,7 @@ const pusher = new Pusher({
 	key: process.env.PUSHER_CHANNEL_KEY,
 	secret: process.env.PUSHER_CHANNEL_SECRET,
 	cluster: process.env.PUSHER_CHANNEL_CLUSTER,
-	useTLS: true
+	
 });
 
 export default pusher;

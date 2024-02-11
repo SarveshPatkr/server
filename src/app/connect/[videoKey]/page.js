@@ -6,7 +6,7 @@ function page({ params }) {
 	const sendEvent = (event, value = params.videoKey) => {
 		fetch("/api/actions", {
 			method: "POST",
-			body: JSON.stringify({ action: event, value: value, extra: 0.5 }),
+			body: JSON.stringify({ action: event, value: value }),
 		});
 	}
 
